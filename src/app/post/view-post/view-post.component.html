@@ -1,1 +1,12 @@
 <p>view-post works!</p>
+<button (click)="fetchData()">dd</button>
+<table>
+<tr *ngFor="let item of data">
+  <td>{{ item.id }}</td>
+<td>{{ item.userId }}</td>
+<td><img src="https://picsum.photos/id/{{ item.id }}/200/300"  width="90" alt="My Image"></td>
+
+<td>{{ item.title }}</td>
+<td>{{ item.body }}</td>
+</tr>
+</table>
