@@ -1,9 +1,9 @@
 <p>insert-post works!</p>
 
-<!--<form [formGroup]="profileForm">-->
-<!--  <input type="number" formControlName="id" placeholder="Enter Id">-->
-<!--  <input type="number" formControlName="user" placeholder="Enter User Id">-->
-<!--  <input type="text" formControlName="name" placeholder="Enter Title">-->
-<!--  <textarea type="text" placeholder="Enter Body"> </textarea>-->
+<form #postForm="ngForm" (ngSubmit)=" postForm.form.valid && submitForm(postForm)">
+  <input type="number" name="id" placeholder="Enter Id" ngModel>
+  <input type="number" name="user" placeholder="Enter User Id" ngModel>
+  <input type="text" name="name" placeholder="Enter Title" ngModel>
+<!--  <textarea type="text" placeholder="Enter Body" ngModel> </textarea>-->
 
-<!--</form>-->
+</form>
