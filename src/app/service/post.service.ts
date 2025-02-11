@@ -6,4 +6,25 @@ import { Injectable } from '@angular/core';
 export class PostService {
 
   constructor() { }
+
+  getAllPost(){
+
+  }
+
+  getSinglePost(){
+
+  }
+
+  createPost(){
+
+  }
+
+  editPost(){
+
+  }
+
+  deletePost(){
+
+  }
+
 }
