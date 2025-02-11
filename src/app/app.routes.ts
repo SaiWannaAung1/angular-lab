@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
-import {PostComponent} from './post/post.component';
-import {InsertPostComponent} from './post/insert-post/insert-post.component';
+;
 import {AppComponent} from './app.component';
-import {ViewPostComponent} from './post/view-post/view-post.component';
+import {PostComponent} from './components/post/post.component';
+import {ViewPostComponent} from './components/post/view-post/view-post.component';
+import {InsertPostComponent} from './components/post/insert-post/insert-post.component';
+
 
 
 export const routes: Routes = [
