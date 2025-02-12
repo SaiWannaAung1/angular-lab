@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Post} from '../../../models/post.model';
+import {NgIf} from '@angular/common';
 
 
 @Component({
@@ -8,7 +9,8 @@ import {Post} from '../../../models/post.model';
   templateUrl: './insert-post.component.html',
   imports: [
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgIf
   ],
   styleUrl: './insert-post.component.scss'
 })
