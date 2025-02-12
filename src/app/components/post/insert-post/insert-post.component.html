@@ -3,7 +3,7 @@
 <form #postForm="ngForm" (ngSubmit)=" postForm.form.valid && submitForm(postForm.value)">
   <input required type="number" #id="ngModel" name="id" placeholder="Enter Id" ngModel> <br>
   <input type="number" #userId="ngModel" name="userId" placeholder="Enter User Id" ngModel> <br>
-  <label *ngIf="title.value== 'java'" class="error">Cannot Insert {{title.value}}</label>
+
 
   <input type="text" #title="ngModel" name="title" placeholder="Enter Title" ngModel> <br>
 
@@ -11,6 +11,16 @@
   <br>
   <button type="submit" [disabled]="!postForm.form.valid">Save</button>
 </form>
+
+<ul *ngIf="title.value">
+  <li *ngFor="let post of postForm.value">
+    {{ post.id }}
+    {{ post.userId }}
+  </li>
+</ul>
+<label *ngIf="title.value== 'java'" class="error">
+  Cannot Insert {{title.value}}
+</label>
 
 
 
