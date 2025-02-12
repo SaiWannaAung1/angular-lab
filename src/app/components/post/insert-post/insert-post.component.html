@@ -1,7 +1,7 @@
 <p>insert-post works!</p>
 
 <form #postForm="ngForm" (ngSubmit)=" postForm.form.valid && submitForm(postForm.value)">
-  <input type="number" #id="ngModel" name="id" placeholder="Enter Id" ngModel> <br>
+  <input required type="number" #id="ngModel" name="id" placeholder="Enter Id" ngModel> <br>
   <input type="number" #userId="ngModel" name="userId" placeholder="Enter User Id" ngModel> <br>
   <label *ngIf="title.value== 'java'" class="error">Cannot Insert {{title.value}}</label>
 
@@ -9,7 +9,7 @@
 
   <textarea type="text"  #body="ngModel" name="body" placeholder="Enter Body" ngModel></textarea>
   <br>
-  <button type="submit" >Save</button>
+  <button type="submit" [disabled]="!postForm.form.valid">Save</button>
 </form>
 
 
