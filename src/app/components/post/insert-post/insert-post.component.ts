@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {Post} from '../../../models/post.model';
+
 
 @Component({
   selector: 'app-insert-post',
@@ -11,7 +13,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   styleUrl: './insert-post.component.scss'
 })
 export class InsertPostComponent {
-  submitForm(userForm:any ) {
-    console.log(userForm.value); // Handle form submission
+  submitForm(userForm:Post ) {
+    Object.entries(userForm).forEach(([key, value]) => {
+      console.log(`${key}: ${value}`);
+    }); // Handle form submission
   }
+
 }

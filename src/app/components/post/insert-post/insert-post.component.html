@@ -1,11 +1,15 @@
 <p>insert-post works!</p>
 
-<form #postForm="ngForm" (ngSubmit)=" postForm.form.valid && submitForm(postForm)">
-  <input type="number" name="id" placeholder="Enter Id" ngModel> <br>
-  <input type="number" name="user" placeholder="Enter User Id" ngModel> <br>
-  <input type="text" name="name" placeholder="Enter Title" ngModel> <br>
-  <textarea type="text" placeholder="Enter Body" ngModel> </textarea> br
+<form #postForm="ngForm" (ngSubmit)=" postForm.form.valid && submitForm(postForm.value)">
+  <input type="number" #id="ngModel" name="id" placeholder="Enter Id" ngModel> <br>
+  <input type="number" #userId="ngModel" name="userId" placeholder="Enter User Id" ngModel> <br>
+  <input type="text" #title="ngModel" name="title" placeholder="Enter Title" ngModel> <br>
+
+  <textarea type="text"  #body="ngModel" name="body" placeholder="Enter Body" ngModel></textarea>
+  br
   <button type="submit" >Save</button>
 </form>
 
-ng generate class model/post --type=model
+
+
+
