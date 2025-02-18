@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
-import {NgClass} from '@angular/common';
+import {NgClass, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html',
   imports: [
     ReactiveFormsModule,
-    NgClass
+    NgClass,
+    NgIf
   ],
   styleUrl: './reactive-form.component.scss'
 })
