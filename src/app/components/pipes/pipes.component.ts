@@ -13,5 +13,5 @@ import {CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/comm
   styleUrl: './pipes.component.scss'
 })
 export class PipesComponent {
-
+  data$ = of('Hello, World!');
 }
