@@ -4,7 +4,7 @@ import {PostComponent} from './components/post/post.component';
 import {ViewPostComponent} from './components/post/view-post/view-post.component';
 import {InsertPostComponent} from './components/post/insert-post/insert-post.component';
 import {ReactiveFormComponent} from './components/reactive-form/reactive-form.component';
-import {PipesComponent} from './pipes/pipes.component';
+import {PipesComponent} from './components/pipes/pipes.component';
 
 
 
