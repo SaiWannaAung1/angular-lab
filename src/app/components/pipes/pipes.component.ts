@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/common';
+import {AsyncPipe, CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/common';
 
 @Component({
   selector: 'app-pipes',
@@ -7,7 +7,8 @@ import {CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/comm
     PercentPipe,
     UpperCasePipe,
     CurrencyPipe,
-    SlicePipe
+    SlicePipe,
+    AsyncPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
