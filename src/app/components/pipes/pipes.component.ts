@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {AsyncPipe, CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/common';
+import {AsyncPipe, CurrencyPipe, I18nSelectPipe, NgForOf, PercentPipe, SlicePipe, UpperCasePipe} from '@angular/common';
+import {of} from 'rxjs';
 
 @Component({
   selector: 'app-pipes',
@@ -8,11 +9,18 @@ import {AsyncPipe, CurrencyPipe, PercentPipe, SlicePipe, UpperCasePipe} from '@a
     UpperCasePipe,
     CurrencyPipe,
     SlicePipe,
-    AsyncPipe
+    AsyncPipe,
+    NgForOf,
+    I18nSelectPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
 })
 export class PipesComponent {
-  data$ = of('Hello, World!');
+  gender = 'male';
+  genderMap = {
+    female: 'She',
+    male: 'He',
+    other: 'They'
+  };
 }
