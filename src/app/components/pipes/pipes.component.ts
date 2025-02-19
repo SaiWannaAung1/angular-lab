@@ -9,8 +9,6 @@ import {of} from 'rxjs';
     UpperCasePipe,
     CurrencyPipe,
     SlicePipe,
-    AsyncPipe,
-    NgForOf,
     I18nSelectPipe
   ],
   templateUrl: './pipes.component.html',

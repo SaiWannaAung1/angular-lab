@@ -5,6 +5,7 @@ import {ViewPostComponent} from './components/post/view-post/view-post.component
 import {InsertPostComponent} from './components/post/insert-post/insert-post.component';
 import {ReactiveFormComponent} from './components/reactive-form/reactive-form.component';
 import {PipesComponent} from './components/pipes/pipes.component';
+import {ResponsiveComponent} from './components/responsive/responsive.component';
 
 
 
@@ -21,4 +22,5 @@ export const routes: Routes = [
   {path: 'reactiveForm-vald', component: ReactiveFormComponent},
   {path: 'post', component: AppComponent},
   {path: 'pipes', component: PipesComponent},
+  {path: 'responsive', component: ResponsiveComponent},
 ];

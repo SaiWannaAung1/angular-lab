@@ -1,0 +1,105 @@
+/* Default (Mobile) Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.menu {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.menu-list {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.menu-button {
+  background-color: #444;
+  border: none;
+  border-radius: 50px; /* Curved buttons for mobile */
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.menu-button mat-icon {
+  font-size: 24px;
+}
+
+.menu-button span {
+  font-size: 12px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-post h3 {
+  margin: 10px;
+}
+
+.blog-post p {
+  margin: 10px;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+
+  .menu-list li a:hover {
+    background-color: #555;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .blog-posts {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Further adjustments for larger screens */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}

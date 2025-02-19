@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="menu">
+    <ul class="menu-list">
+      <li *ngFor="let item of menuItems">
+        <a [routerLink]="item.link">{{ item.label }}</a>
+      </li>
+    </ul>
+    <div class="mobile-menu">
+      <button *ngFor="let item of menuItems" class="menu-button" >
+        <span>{{ item.label }}</span>
+      </button>
+    </div>
+  </nav>
+  <div class="blog-posts">
+    <div class="blog-post" *ngFor="let post of blogPosts">
+      <img [src]="post.imageUrl" alt="{{post.title}}">
+      <h3>{{post.title}}</h3>
+      <p>{{post.content | slice:0:100}}...</p>
+    </div>
+  </div>
+</div>
