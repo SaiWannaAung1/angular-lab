@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular-lab": "node dist/angular-lab/server/server.mjs"
-  },
+  }, 
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
